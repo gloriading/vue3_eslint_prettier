@@ -1,23 +1,18 @@
 <template>
-    <div class="home">
-        <img alt="Vue logo" src="../assets/logo.png" />
-        <HelloWorld :msg="welcomeMsg" />
-    </div>
+    <hello-world />
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent } from 'vue'
-import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
+import HelloWorld from '../components/HelloWorld.vue'
 
 export default defineComponent({
     name: 'Home',
+
     components: {
         HelloWorld,
     },
-    setup() {
-        return {
-            welcomeMsg: 'Welcome to Your Vue.js + TypeScript App',
-        }
-    },
+
+    // setup() {},
 })
 </script>
